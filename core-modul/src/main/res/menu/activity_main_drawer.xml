@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.aero">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_upcoming_event"
+            android:title="@string/events" />
+        <item
+            android:id="@+id/nav_seminars"
+            android:icon="@drawable/ic_services"
+            android:title="@string/services" />
+        <item
+            android:id="@+id/nav_conference"
+            android:icon="@drawable/ic_announcement"
+            android:title="@string/announcement" />
+        <item
+            android:id="@+id/nav_aircraft"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/nav_flying"
+            android:icon="@drawable/ic_where_ami"
+            android:title="@string/where_am" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+    <!--<group android:checkableBehavior="single">-->
+
+    <!--</group>-->
+</menu>

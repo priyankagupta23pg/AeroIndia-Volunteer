@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aeroindia">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/iconn1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/blue" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.aeroindia.view.activity.Base"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.aeroindia.view.activity.Home"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.DashboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Fullscreen" />
+        <activity
+            android:name="com.aeroindia.view.activity.DashboardVolunteerActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Fullscreen" />
+        <activity android:name="com.aeroindia.view.activity.SideMenuActivity" />
+        <activity
+            android:name="com.aeroindia.view.activity.ContactExhibitor"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.aeroindia.view.activity.B2BActivity" />
+        <activity
+            android:name="com.aeroindia.view.activity.SendRequestActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.NewDashboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.aeroindia.view.activity.DashboardExhibitorActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service android:name="com.aeroindia.Notif.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.aeroindia.Notif.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.aeroindia.view.activity.MyActivities"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.aeroindia.view.activity.ViewMessageDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.ServicesActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.AnnouncementsActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.UpcomingEventsActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.MyWallActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.DocCameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.AddAnnouncementActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.CreateExhibitorProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.aeroindia.view.activity.ExhibitorListActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.WriteFeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.WhereAmActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.AirforceActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.aeroindia.view.activity.AirforceServicesActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.aeroindia.view.activity.ShowLatLongActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.ServiceCategoryOnMapActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.UpdatesActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.ViewCategoryDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.ExhibitorContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.StallLocationOnMapActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aeroindia.view.activity.WebViewMapActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.aeroindia.view.activity.VolunteerScanQRActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.aeroindia.view.activity.ViewProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.aeroindia.view.activity.ShowDocumentActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="com.aeroindia.view.activity.HallRedirectionActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name="com.aeroindia.view.activity.ComplaintsActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"></activity>
+  <activity android:name="com.aeroindia.view.activity.VolunteerScanQRResolveActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aeroindia.view.activity.VolunteerScanQRNotattendActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver android:name="com.aeroindia.view.Receiver.FeedbackReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <service android:name="com.aeroindia.view.Receiver.UpdateFeedbackService">
+        </service>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.maps.v2.API_KEY"-->
+            <!--android:value="@string/google_maps_key" />-->
+    </application>
+
+</manifest>

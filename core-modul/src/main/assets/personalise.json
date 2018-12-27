@@ -1,0 +1,26 @@
+{
+	"possesions": {
+		"hallNo": "HALL 3",
+		"stalNo": "3.2.10",
+		"company": "AIRBUS GROUP",
+		"address": "81663,,Germany",
+		"phone": "4915117439966",
+		"email": "edelweiss.alonso@airbus.com"
+	},
+	"meetings": [{
+		"meetingWith": "Exhibitor",
+		"location": "Pune",
+		"time": "11:00 AM",
+		"date": "28-09-2018",
+		"contactNum": "7858546857"
+	},
+		{
+			"meetingWith": "Visitors",
+			"location": "Chennai",
+			"time": "1:00 PM",
+			"date": "02-02-2019",
+			"contactNum": "7885765467"
+		}
+	]
+
+}

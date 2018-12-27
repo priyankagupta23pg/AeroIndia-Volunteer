@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliderFL"
+    tools:context="com.aeroindia.view.fragment.ImageSliderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewAnnouncement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_150"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/margin_150"
+       android:id="@+id/sliderImageIV"
+       android:scaleType="fitXY"
+       />
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_130"
+        android:visibility="visible"
+        android:id="@+id/sliderTextTV"
+        android:text=""
+        android:scaleType="fitXY"
+        style="@style/sliderTextView"
+        android:gravity="center_horizontal|center_vertical"
+      />-->
+<!--
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_130"
+            android:id="@+id/announcementWV"
+            >
+
+        </WebView>-->
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

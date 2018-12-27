@@ -1,0 +1,79 @@
+{
+    "Id": 0,
+    "Status": 200,
+    "Message": null,
+    "Data": {
+        "SuperAdmins": 2,
+        "StateAdmins": 4,
+        "Postmen": 2,
+        "TotalHouseholds": 52,
+        "TotalElectrified": 45,
+        "TotalUnelectrified": 7,
+        "TotalVillages": 301,
+        "VillagesSurveyed": 2,
+        "TotalUnelectrifiedList": [
+            {
+                "Text": "9/15/2017",
+                "Value": "3"
+            },
+            {
+                "Text": "9/16/2017",
+                "Value": "2"
+            },
+            {
+                "Text": "9/14/2017",
+                "Value": "2"
+            },
+            {
+                            "Text": "9/13/2017",
+                            "Value": "2"
+                        },
+                        {
+                                        "Text": "9/12/2017",
+                                        "Value": "2"
+                                    },
+                                    {
+                                                    "Text": "9/11/2017",
+                                                    "Value": "2"
+                                                },
+                                                {
+                                                                "Text": "9/17/2017",
+                                                                "Value": "2"
+                                                            }
+        ],
+        "VillagesSurveyedList": [
+            {
+                "Text": "9/15/2017",
+                "Value": "2"
+            },
+            {
+                "Text": "9/16/2017",
+                "Value": "1"
+            },
+            {
+                "Text": "9/14/2017",
+                "Value": "1"
+            }
+            ,
+                        {
+                            "Text": "9/13/2017",
+                            "Value": "1"
+                        }
+                        ,
+                                    {
+                                        "Text": "9/12/2017",
+                                        "Value": "1"
+                                    }
+                                    ,
+                                                {
+                                                    "Text": "9/11/2017",
+                                                    "Value": "1"
+                                                }
+                                                ,
+                                                            {
+                                                                "Text": "9/17/2017",
+                                                                "Value": "1"
+                                                            }
+        ]
+    }
+}

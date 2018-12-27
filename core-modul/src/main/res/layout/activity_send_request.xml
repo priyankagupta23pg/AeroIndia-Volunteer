@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aeroindia.view.activity.SendRequestActivity">
+    <include
+        layout="@layout/header" />
+
+    <RelativeLayout android:id="@+id/exhibitorLay"
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_20"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/companyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Company :"
+            android:textStyle="bold"
+            android:padding="@dimen/margin_10"/>
+
+
+        <TextView android:id="@+id/companyVal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Global Point"
+            android:layout_alignStart="@+id/addVal"
+            android:padding="@dimen/margin_10"/>
+
+        <TextView android:id="@+id/addTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Address :"
+            android:layout_below="@+id/companyVal"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/addVal"
+
+            android:padding="@dimen/margin_10"/>
+
+
+        <TextView android:id="@+id/addVal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="Address xyz..................dfdfdfdfdfdfdfd........."
+            android:layout_below="@+id/companyVal"
+
+            android:padding="@dimen/margin_10"/>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/dateTimePicker"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select date &amp; time"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/rounded_shape_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView android:id="@+id/selectedDateTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected date time will be displayed here"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/margin_10"/>
+
+    <EditText
+        android:id="@+id/placeET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:padding="@dimen/margin_8"
+        android:inputType="text"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/darker_gray"
+        android:hint="@string/place"
+        android:background="@drawable/edittext_white_bg_gray_corner"
+        />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:padding="@dimen/margin_5"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/white"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:background="@color/text_color_main"
+        />
+</LinearLayout>

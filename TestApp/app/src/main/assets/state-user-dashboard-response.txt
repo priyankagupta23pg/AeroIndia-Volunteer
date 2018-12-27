@@ -1,0 +1,17 @@
+{
+	"villageStates": [{
+			"stateCode": 11,
+			"stateName": "Assam",
+			"villageCount": 300
+		}
+	],
+	"unElectrifiedHouseholdStates": [{
+			"stateCode": 11,
+			"stateName": "Assam",
+			"unElectrifiedHouseCount": 45000
+		}
+	],
+
+	"Status": 403,
+	"Message": ""
+}

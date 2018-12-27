@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dashRefreshLayout">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+    <!--<LinearLayout-->
+        <!--android:weightSum="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/margin_120"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/contactExhibitorRel"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/event_IV"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="@dimen/margin_50"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_contact_exhibitor" />-->
+                <!--<TextView-->
+                    <!--style="@style/mediumEditText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/event_IV"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:text="@string/contact_exhibitor" />-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/contact_organizer"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1">-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/personalise_IV"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_contact_organizer" />-->
+
+                <!--<TextView-->
+                    <!--style="@style/mediumEditText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/personalise_IV"-->
+                    <!--android:gravity="center"-->
+<!--android:layout_alignParentBottom="true"-->
+                    <!--android:text="@string/contact_organizer"-->
+                    <!--android:textAlignment="center" />-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/mymeetingsLay"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/b2b_IV"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_my_wal" />-->
+                <!--<TextView-->
+                    <!--style="@style/mediumEditText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_below="@+id/b2b_IV"-->
+                    <!--android:text="@string/my_activity"-->
+                    <!--android:textAlignment="center" />-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/margin_120"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--android:visibility="gone"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/b2bMeetingRel">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/exhibitor_IV"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="@dimen/margin_50"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_b2b" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/exhibitor_IV"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/bbmeeting"-->
+                    <!--android:layout_alignParentBottom="true"-->
+
+                    <!--android:textAlignment="center"-->
+                    <!--style="@style/mediumEditText" />-->
+
+
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/bookServicesLay"-->
+               <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/nearby_IV"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="@dimen/margin_50"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_book_servie" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/nearby_IV"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/bookservices"-->
+                    <!--android:layout_alignParentBottom="true"-->
+
+                    <!--android:textAlignment="center"-->
+                    <!--style="@style/mediumEditText" />-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="gone"-->
+
+                <!--card_view:cardCornerRadius="@dimen/margin_5"-->
+                <!--android:layout_margin="@dimen/margin_8"-->
+                <!--&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/notiLay"-->
+               <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/notification"-->
+                    <!--android:layout_width="@dimen/margin_50"-->
+                    <!--android:layout_height="@dimen/margin_50"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/margin_13"-->
+                    <!--android:src="@drawable/ic_notify" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/notification"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/notification"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:layout_alignParentBottom="true"-->
+
+                    <!--style="@style/mediumEditText"-->
+                     <!--/>-->
+            <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

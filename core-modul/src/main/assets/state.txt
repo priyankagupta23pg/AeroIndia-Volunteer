@@ -1,0 +1,31 @@
+{
+        "Id": 0,
+            "Status": 200,
+            "Message": null,
+            "Data": [
+        {
+            "Text": "Assam",
+                "Value": "18"
+        },
+        {
+            "Text": "Chattisgarh",
+                "Value": "22"
+        },
+        {
+            "Text": "Jharkhand",
+                "Value": "20"
+        },
+        {
+            "Text": "Madhya Pradesh",
+                "Value": "23"
+        },
+        {
+            "Text": "Odisha",
+                "Value": "21"
+        },
+        {
+            "Text": "Uttar Pradesh",
+                "Value": "9"
+        }
+        ]
+    }

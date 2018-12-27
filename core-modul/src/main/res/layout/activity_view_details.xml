@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aeroindia.view.activity.ViewMessageDetailsActivity">
+
+    <include
+        layout="@layout/header" />
+    <RelativeLayout android:id="@+id/lay"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_50"
+    android:padding="@dimen/margin_20dp">
+    <TextView android:id="@+id/fromLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="From :"
+    android:textStyle="bold"/>
+
+    <TextView android:id="@+id/fromTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc@gmail.com"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/fromLabel"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/fromTv"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Nov 2019"
+        android:layout_below="@+id/fromTv"
+        android:layout_marginTop="@dimen/margin_10dp"
+
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/dateLabel"
+        android:textStyle="bold"/>
+
+
+    <TextView android:id="@+id/purposeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose :"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/dateTv"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/purposeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commercial"
+        android:layout_below="@+id/dateTv"
+        android:layout_marginTop="@dimen/margin_10dp"
+
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_toRightOf="@+id/purposeLabel"
+        android:textStyle="bold"/>
+
+    <TextView android:id="@+id/msgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message :"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_below="@+id/purposeTv"
+        android:textStyle="bold"/>
+
+
+    <TextView android:id="@+id/msgTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi! Wanted to connect with you. I'm with Ovamba. Ovamba is led by a highly experienced and passionate team. Its founders and senior ex"
+        android:layout_below="@+id/msgLabel"
+        android:layout_marginTop="@dimen/margin_10dp"
+
+
+       />
+
+</RelativeLayout>
+</RelativeLayout>

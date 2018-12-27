@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="10dp"
+    android:layout_gravity="center_horizontal"
+
+    >
+
+    <RelativeLayout
+        android:background="@color/text_color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:id="@+id/headerr">
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font_16"
+            android:text="Verify Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/cancelIV"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:background="@drawable/close_icon"/>
+
+    </RelativeLayout>
+<TextView android:id="@+id/otpLabel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headerr"
+    android:padding="@dimen/margin_10dp"
+    android:textColor="@color/green"
+    android:text="OTP has been sent successfully on your registered email"/>
+
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        android:paddingRight="10dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/verifyCodeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="@string/entercode"
+            app:met_baseColor="@color/themecolor"
+            app:met_primaryColor="@color/themecolor"
+            app:met_textColorHint="@color/themecolor"
+            app:met_floatingLabelTextColor="@color/black"
+            app:met_underlineColor="@color/themecolor"
+
+            app:met_floatingLabel="highlight"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:imeOptions="actionDone"
+
+
+            app:met_singleLineEllipsis="false"/>
+        <TextView android:id="@+id/incorrectotpLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifyCodeET"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/red"
+            android:text="Incorrect OTP"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:layout_below="@+id/incorrectotpLabel"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_shape_theme_border"
+            android:text="Submit"
+            android:textSize="@dimen/margin_16"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+

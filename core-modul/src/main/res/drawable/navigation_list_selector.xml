@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/navigation_bg" android:state_activated="true" />
+    <item android:drawable="@color/navigation_bg" android:state_focused="true" />
+    <item android:drawable="@color/navigation_bg" android:state_checked="true" />
+    <item android:drawable="@color/navigation_bg" android:state_pressed="true" />
+    <item android:drawable="@color/navigation_bg"/>
+</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/navigation_bg" />
+                </shape>
+            </item>
+
+            <item  android:right="-2dp" android:left="-2dp" android:bottom="-2dp">
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <stroke
+                        android:width="0.5dp"
+                        android:color="@color/navigation_divider" />
+                </shape>
+                <!--
+                android:dashGap="10px"
+                        android:dashWidth="10px"
+                        -->
+            </item>
+
+        </layer-list>
+        </item>
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/navigation_bg" />
+                </shape>
+            </item>
+
+            <item  android:right="-2dp" android:left="-2dp" android:bottom="-2dp">
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <stroke
+                        android:width="0.5dp"
+                        android:color="@color/navigation_divider" />
+                </shape>
+                <!--
+                android:dashGap="10px"
+                        android:dashWidth="10px"
+                        -->
+            </item>
+
+        </layer-list>
+    </item>
+
+    </selector>

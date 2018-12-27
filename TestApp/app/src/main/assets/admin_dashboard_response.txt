@@ -1,0 +1,67 @@
+{
+	"villageStates": [{
+			"stateCode": 11,
+			"stateName": "Assam",
+			"villageCount": 300
+		},
+		{
+			"stateCode": 12,
+			"stateName": "Chattisgarh",
+			"villageCount": 700
+		},
+		{
+			"stateCode": 13,
+			"stateName": "Odisha",
+			"villageCount": 800
+		},
+		{
+			"stateCode": 14,
+			"stateName": "Jharkhand",
+			"villageCount": 200
+		},
+		{
+			"stateCode": 15,
+			"stateName": "MadhyaPradesh",
+			"villageCount": 1000
+		},
+		{
+			"stateCode": 16,
+			"stateName": "UttarPradesh",
+			"villageCount": 900
+		}
+	],
+	"unElectrifiedHouseholdStates": [{
+			"stateCode": 11,
+			"stateName": "Assam",
+			"unElectrifiedHouseCount": 45000
+		},
+		{
+			"stateCode": 12,
+			"stateName": "Chattisgarh",
+			"unElectrifiedHouseCount": 34434
+		},
+		{
+			"stateCode": 13,
+			"stateName": "Odisha",
+			"unElectrifiedHouseCount": 37784
+		},
+		{
+			"stateCode": 14,
+			"stateName": "Jharkhand",
+			"unElectrifiedHouseCount": 45097
+		},
+		{
+			"stateCode": 15,
+			"stateName": "MadhyaPradesh",
+			"unElectrifiedHouseCount": 67088
+		},
+		{
+			"stateCode": 16,
+			"stateName": "UttarPradesh",
+			"unElectrifiedHouseCount": 90786
+		}
+	],
+
+	"Status": 403,
+	"Message": ""
+}

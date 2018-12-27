@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="signup">Login/Sign Up</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="refresh">Refresh</string>
+    <string name="submit">SUBMIT</string>
+    <string name="resolve">Resolve</string>
+    <string name="attend">Attend</string>
+    <string name="notattended">Not Attended</string>
+    <string name="login">LOGIN</string>
+    <string name="verify">Verify Email</string>
+    <string name="entercode">Enter OTP</string>
+    <string name="entercodetext">Enter Code to verify the email address</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="pendinglist">Pending List</string>
+    <string name="resolvelist">Resolved List</string>
+    <string name="attendedlist">Attended List</string>
+    <string name="nonattendedlist">NonAttended List</string>
+    //LOGIN
+
+    <string name="empty_mob_msg">Please enter mobile number</string>
+    <string name="empty_contry_msg">Please selet country</string>
+    <string name="datadownloading_failed">Data downloading process failed.</string>
+    <string name="claimlist">Claim List</string>
+
+    //OTP VALIDATE
+
+    <string name="otp_title">Enter OTP Here</string>
+    <string name="didnot_recieve">Did not recieve an OTP?</string>
+    <string name="otp_recieve">OTP is sent to your number successfully</string>
+
+    <string name="ptr_pull_to_refresh"></string>
+    <string name="ptr_release_to_refresh"></string>
+    <string name="ptr_refreshing"></string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="please_wait"> Please wait...</string>
+    <string name="Alert">Alert</string>
+    <string name="OK">OK</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="chooser_title">Lorem ipsum</string>
+    <string name="enrollment">Patient Registration</string>
+    <string name="check_internet"> Please check your internet connectivity</string>
+
+    <string name="request_test">Request Test</string>
+    <string name="current_patient">Current Patients</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="age">Age</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="nikshay_id">Nikshay ID</string>
+    <string name="gender">Gender</string>
+    <string name="test_result">Test Result</string>
+    <string name="patient_detail">Patient Detail</string>
+    <string name="reason_for_test">Choose Reason For Test</string>
+    <string name="enter_patient_name">Please enter patient name</string>
+    <string name="enter_pincode">Please enter pincode</string>
+    <string name="enter_landmark">Please enter landmark</string>
+    <string name="enter_taluka">Please enter taluka</string>
+    <string name="enter_street_name">Please enter street name</string>
+    <string name="enter_house_no">Please enter house number</string>
+    <string name="enter_mobile_no">Please enter mobile number</string>
+    <string name="enter_age">Please enter age</string>
+    <string name="enter_nikshay_id">Please enter Nikshay Id</string>
+    <string name="requested_test_msg">You have not request any test to enter results</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="head_dashboard">Dashboard</string>
+    <string name="exhibitorLogin">Exhibitor Login </string>
+    <!--DASHBOARD-->
+    <string name="current_patients">Current Patients</string>
+    <string name="manage_enrollment">Manage Enrollment</string>
+    <string name="rntcp_treatment_card">RNTCP Treatment Card</string>
+    <string name="pmdt_treatment_card">PMDT Treatment Card</string>
+    <string name="report">Report</string>
+    <string name="sync">Sync</string>
+    <string name="trainning_material">Training Material</string>
+    <!--     <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string> -->
+    <string name="b2b">B2b Meetings</string>
+    <string name="announcement">Notice Board</string>
+    <string name="update">Updates</string>
+    <string name="personalise">Personalise</string>
+    <string name="services">Services</string>
+    <string name="exhibitors">Exhibitors</string>
+    <string name="feedback">Feedback</string>
+    <string name="hall">Hall</string>
+    <string name="nearby">Near By</string>
+    <string name="where_am">Where am I?</string>
+    <string name="where_am1">Where am I</string>
+    <string name="allservices">All Services</string>
+    <string name="more">More</string>
+    <string name="email">Email Address *</string>
+    <string name="name">Name *</string>
+    <string name="pswd">Password</string>
+    <string name="place">Enter meeting place</string>
+    <string name="frgtpswd">Forgot Password?</string>
+    <string name="welcome">Welcome,</string>
+    <string name="welcom">Welcome</string>
+    <string name="newdelhi">New Delhi</string>
+    <string name="events">Upcoming Events</string>
+    <string name="contact_exhibitor">Contact Exhibitor</string>
+    <string name="contact_organizer">Contact Organizer</string>
+    <string name="contact">Contact</string>
+    <string name="viewprof">View Profile</string>
+    <string name="latest">Updates</string>
+    <string name="phone1">Phone Number</string>
+    <string name="country">Country *</string>
+    <string name="exhibitor">Exhibitor</string>
+    <string name="others">Others</string>
+    <string name="general">General Visitor</string>
+    <string name="uniqueId">Company Unique Id </string>
+    <string name="stall_loc">Location</string>
+    <string name="aero">AERO INDIA 2019</string>
+    <string name="date_time">(20-24 February)</string>
+    <string name="my_wall">My Wall</string>
+    <string name="my_meeting">My Meetings</string>
+    <string name="my_activity">My Activities</string>
+    <string name="msgDetail">Message Details</string>
+    <string name="bbmeeting">B2B Meetings</string>
+    <string name="addProfile">Company Profile</string>
+    <string name="sendreq">Send Request</string>
+    <string name="bookservices">Book Services</string>
+    <string name="notification">Notifications</string>
+    <string name="seminars">Seminars</string>
+    <string name="conference">Conference</string>
+    <string name="aircraft">Aircraft on Display</string>
+    <string name="flying">Flying Schedule</string>
+    <string name="logout">Logout</string>
+    <string name="delegators">Visitors</string>
+    <string name="schedule">Schedule</string>
+    <string name="videocall">Video Call</string>
+    <string name="voicecall">Voice Call</string>
+    <string name="email_empty">Please Enter Your Email Id</string>
+    <string name="name_empty">Please Enter Your Name</string>
+    <string name="cmpny_empty">Please Enter Your Company</string>
+    <string name="cntry_empty">Please Enter Your contry</string>
+    <string name="uniquId_empty">Please Enter Your uniqueId</string>
+    <string name="password_empty">Please Enter Your Password</string>
+    <string name="validdetails">Please Enter Valid Details</string>
+    <string name="possession">Your Exhibitors</string>
+    <string name="meetings">Meetings</string>
+    <string name="username">test@test.com</string>
+    <string name="password">test</string>
+    <string name="hallNo">Hall No :</string>
+    <string name="stalNo">Stall No :</string>
+    <string name="company">Company :</string>
+    <string name="company1">Company </string>
+    <string name="address">Address :</string>
+    <string name="phone">Contact :</string>
+    <string name="emailadress">Email :</string>
+    <string name="timeout_issue">There is timeout issue your internet is too weak.</string>
+    <string name="commnetTxtempty">Please enter something to comment.</string>
+    <string name="IO_ERROR">Unable to connect to the Server. Please check your network connectivity.</string>
+
+    <string name="server_issue">There is some problem connecting to server, Please try again later.</string>
+    <string name="internet_connection_message">Please connect to Internet.</string>
+
+    <string name="purpose">Purpose</string>
+    <string name="sender_email">Sender Email Address</string>
+    <string name="sender_name">Your Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="send">Send</string>
+    <string name="empty_name">Please Enter Name</string>
+    <string name="empty_company">Please Enter Company Name</string>
+    <string name="empty_purpose">Please Enter Purpose</string>
+
+    <string name="empty_message">Please Enter Message</string>
+    <string name="message">Message (Max. 500 characters)</string>
+    <string name="about_company">Write about your company (Max. 500 characters)</string>
+    <string name="empty_about_company">Please Enter Company Data</string>
+    <string name="write_announcement">Write announcement (Max. 500 characters)</string>
+    <string name="weblink">Company URL</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="add_announcement">Add Announcement</string>
+    <string name="publish">Publish</string>
+    <string name="auto">Auto</string>
+
+    <string name="qrcodeET_hint">QR Code Number</string>
+    <string name="qrcode_issue">Please enter QR Code number if you are facing any difficulty in scanning. </string>
+</resources>

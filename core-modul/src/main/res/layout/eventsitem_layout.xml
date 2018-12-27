@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="@dimen/margin_40"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_marginTop="@dimen/margin_20dp" />
+
+                <TextView
+                    android:id="@+id/typeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/imgIcon"
+                    android:text="Seminar - "
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/typeTv"
+
+                    android:text="fgd dghdgkjghdghdgdhhdhgh "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTv"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10dp"
+
+                    android:layout_toRightOf="@+id/imgIcon"
+                    android:text="Date/Time : " />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTv"
+                    android:layout_marginTop="@dimen/margin_10dp"
+
+                    android:layout_toRightOf="@+id/dateLabel"
+                    android:text="25 NOv 2019 5:00 PM" />
+
+                <TextView
+                    android:id="@+id/venuLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTv"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_toRightOf="@+id/imgIcon"
+
+                    android:text="Venue : " />
+
+                <TextView
+                    android:id="@+id/venuTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dateTv"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_toLeftOf="@+id/venuLoc"
+                    android:layout_toRightOf="@+id/venuLabel"
+                    android:text="XYZ" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/venuLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/dateTv"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@drawable/rounded_shape_theme_border"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="Venue Location"
+
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_10">
+                <RelativeLayout
+                    android:id="@+id/feedbackRL"
+                    android:layout_below="@+id/lay2"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/edittext_green_bg_curve_corner"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/contactIV"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/feedback_icon" />
+
+                    <TextView
+                        style="@style/mediumEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/contactIV"
+                        android:text="@string/feedback" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/locLayout"
+                    android:layout_below="@+id/lay2"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/feedbackRL"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:background="@drawable/edittext_green_bg_curve_corner"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/stallLocIV"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/location_circle" />
+
+                    <TextView
+                        style="@style/mediumEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/stallLocIV"
+                        android:text="Venue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/extraLayout"
+                    android:layout_below="@+id/lay2"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/feedbackRL"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/edittext_green_bg_curve_corner"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/extraIV"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:background="@drawable/location_circle" />
+
+                    <TextView
+                        style="@style/mediumEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/extraIV"
+                        android:text="Venu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+

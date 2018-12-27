@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "593943146655",
+    "firebase_url": "https://aeroindia2019-72b6a.firebaseio.com",
+    "project_id": "aeroindia2019-72b6a",
+    "storage_bucket": "aeroindia2019-72b6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593943146655:android:3b2bf5df2a97177a",
+        "android_client_info": {
+          "package_name": "com.aeroindia.volunteer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593943146655-rlbpnutdev592u0rr9t5dmal439n9obt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClFVA16vjwiFDcVD4KdQpICi7HM3f2Q7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

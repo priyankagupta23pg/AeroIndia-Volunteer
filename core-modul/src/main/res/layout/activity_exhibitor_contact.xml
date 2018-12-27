@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/header"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout android:id="@+id/ll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:visibility="gone"
+                        android:id="@+id/nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/darker_gray"
+                        android:focusable="true"
+                        android:hint="@string/sender_name"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        />
+                    <EditText
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/darker_gray"
+                        android:focusable="true"
+                        android:hint="@string/sender_email"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        />
+                    <EditText
+                        android:id="@+id/cmpnyET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/darker_gray"
+                        android:focusable="true"
+                        android:hint="@string/company1"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        />
+                    <EditText
+                        android:id="@+id/purposeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/darker_gray"
+                        android:focusable="true"
+                        android:hint="@string/purpose"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        />
+                    <EditText
+                        android:id="@+id/messageET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_100"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_8"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:maxLength="500"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/darker_gray"
+                        android:focusable="true"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:hint="@string/message"
+                        android:singleLine="false"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        />
+
+                    <Button
+                        android:id="@+id/sendButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/white"
+                        android:text="@string/send"
+                        android:background="@color/text_color_main"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

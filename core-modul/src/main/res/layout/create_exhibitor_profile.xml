@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent_blue"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:background="@color/text_color_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50">
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/font_16"
+                android:text="Company Profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/cancelIV"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/margin_40"
+                android:layout_height="@dimen/margin_40"
+                android:background="@drawable/close_icon"/>
+
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_100">-->
+        <!--<ImageView-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="@dimen/margin_100"-->
+        <!--android:layout_height="@dimen/margin_100"-->
+        <!--android:padding="@dimen/margin_13"-->
+        <!--android:src="@drawable/user_image"-->
+
+        <!--/>-->
+        <!--</RelativeLayout>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/aboutMeET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_100"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/margin_8"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:textSize="@dimen/font_16"
+                android:imeOptions="actionDone"
+                android:gravity="start"
+                android:textColor="@color/darker_gray"
+                android:focusable="true"
+                android:hint="@string/about_company"
+                android:background="@drawable/edittext_white_bg_gray_corner"
+                />
+
+
+            <Button
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:padding="@dimen/margin_5"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/white"
+                android:text="@string/submit"
+                android:background="@color/text_color_main"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

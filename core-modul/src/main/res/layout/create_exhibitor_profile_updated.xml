@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/header" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/weblinkET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        android:focusable="true"
+                        android:hint="@string/weblink"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="@dimen/margin_8"
+                        android:singleLine="true"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/font_16" />
+
+                    <EditText
+                        android:id="@+id/aboutMeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_100"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/edittext_white_bg_gray_corner"
+                        android:focusable="true"
+                        android:gravity="start"
+                        android:hint="@string/about_company"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:maxLength="500"
+                        android:padding="@dimen/margin_8"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/font_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/margin_10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/companyLogoLL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/margin_5"
+                            android:paddingRight="@dimen/margin_5"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_upload1" />
+
+                            <TextView
+                                android:id="@+id/initReqBT"
+                                android:layout_width="56dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:inputType="textMultiLine"
+                                android:text="Upload Logo"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorDarkGray"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_marginLeft="@dimen/margin_10">
+
+                            <ImageView
+                                android:id="@+id/logoIV"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/no_image"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10"
+                        android:orientation="horizontal"
+                       >
+
+
+
+                        <LinearLayout
+                            android:id="@+id/documentLL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/margin_5"
+                            android:paddingRight="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_10"
+
+                            >
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/doc_upload" />
+
+                            <TextView
+
+                                android:layout_width="56dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:inputType="textMultiLine"
+                                android:text="Document"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorDarkGray"
+                                android:textSize="10sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/errorDocTV"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_40"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@drawable/edittext_white_bg_gray_corner"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_13"
+                                android:text="No documents"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_14"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/docListLL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_40"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/docRV"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="vertical" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--   <LinearLayout
+                           android:layout_margin="@dimen/margin_10"
+                           android:layout_gravity="right"
+                           android:paddingLeft="@dimen/margin_5"
+                           android:paddingRight="@dimen/margin_5"
+                           android:id="@+id/documentLL"
+                           android:background="@drawable/rounded_shape_yello_button"
+                           android:layout_width="wrap_content"
+                           android:layout_height="50dp">
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="50dp"
+                               android:orientation="horizontal"
+                               android:gravity="center"
+                               android:layout_marginBottom="20dp"
+                               android:padding="@dimen/margin_5">
+                               <TextView
+
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Document"
+                                   android:textColor="@color/white"
+                                   android:textAllCaps="false"
+                                   android:textSize="16sp" />
+                               <ImageView
+
+                                   android:layout_centerVertical="true"
+                                   android:src="@drawable/plus_icon"
+                                   android:layout_width="@dimen/margin_30dp"
+                                   android:layout_height="@dimen/margin_30dp"
+                                   android:layout_marginLeft="@dimen/margin_5"
+                                   android:scaleType="fitXY"/>
+                           </LinearLayout>
+                       </LinearLayout>-->
+
+
+                </LinearLayout>
+
+                <Button
+
+                    android:id="@+id/submitBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/text_color_main"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

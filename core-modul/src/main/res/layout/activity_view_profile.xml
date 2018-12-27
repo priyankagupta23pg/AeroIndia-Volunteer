@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aeroindia.view.activity.ViewProfileActivity">
+    <include layout="@layout/header" />
+<RelativeLayout android:id="@+id/layoutt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_50"
+    android:padding="@dimen/margin_10dp">
+
+    <com.customComponent.ImageViewRounded android:id="@+id/cmpnyImg"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/margin_100"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/psquickit_logo"
+
+       />
+    <TextView android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_10"
+android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cmpnyImg"/>
+    <TextView android:id="@+id/descTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us :"
+        android:textStyle="bold"
+        android:layout_below="@+id/web"
+        android:layout_marginTop="@dimen/margin_20dp"
+        />
+
+    <TextView android:id="@+id/descVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/margin_2"
+        android:text="PS QuickIT has extensive experience building native &amp; hybrid mobility solutions on Android, iPhone, iPad, and Windows."
+        android:layout_below="@+id/descTv"
+        android:layout_marginTop="@dimen/margin_10dp"
+        />
+    <RelativeLayout android:id="@+id/brochureLay"
+        android:layout_below="@+id/descVal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    <include layout="@layout/documentlayout" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

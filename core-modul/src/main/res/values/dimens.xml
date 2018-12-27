@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_icon_size" tools:override="true">36dp</dimen>
+
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="tiny_gap_default">1dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="card_shadow">1dp</dimen>
+    <dimen name="padding_mini">5dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="margin_below_l">20dp</dimen>
+    <dimen name="margin_mini">5dp</dimen>
+    <dimen name="margin_large">30dp</dimen>
+    <dimen name="radius_default">5dp</dimen>
+    <dimen name="radius_mini">5dp</dimen>
+    <dimen name="radius_large">20dp</dimen>
+
+    <dimen name="chip_height">32dp</dimen>
+    <dimen name="chip_horizontal_padding">12dp</dimen>
+    <dimen name="chip_icon_horizontal_margin">8dp</dimen>
+    <dimen name="chip_close_horizontal_margin">4dp</dimen>
+    <dimen name="chip_close_icon_size">18dp</dimen>
+    <dimen name="chip_close_icon_size2">24dp</dimen>
+    <dimen name="chip_close_icon_padding">3dp</dimen>
+
+    <dimen name="font_9">9sp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="font_28">28sp</dimen>
+    <dimen name="font_32">32sp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_82">82dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_130">130dp</dimen>
+</resources>

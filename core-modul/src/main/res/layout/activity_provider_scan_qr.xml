@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView android:id="@+id/writeFor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write For"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_70"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/lnr_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginBottom="@dimen/margin_30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="Scan QR Code"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/margin_10"
+                        />
+
+
+                    <FrameLayout
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:id="@+id/content_frame"
+                        android:layout_width="300dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_height="170dp"
+                        android:layout_above="@+id/txt_scan_gallery"
+                        android:layout_below="@+id/txt_scan" />
+
+                    <TextView
+                        android:id="@+id/txt_scan_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10dp"
+
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+
+                        />
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_scan"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView android:id="@+id/rescan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ReScan"
+                    android:visibility="gone"
+                    android:padding="@dimen/margin_10dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ratingLL"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/statusTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/commentTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="comment"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Name : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/serviceNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_40"
+                    >
+
+                    <Button
+
+                        android:id="@+id/attend"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/white"
+                        android:text="@string/attend"
+                        android:background="@color/text_color_main"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10">
+
+
+            <TextView
+                android:id="@+id/writeFor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_70"
+                android:text="Write For"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writeFor"
+                android:visibility="gone"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lnr_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginBottom="@dimen/margin_30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="Scan QR Code"
+                        android:textColor="@color/black" />
+
+
+                    <FrameLayout
+                        android:id="@+id/content_frame"
+                        android:layout_width="300dp"
+                        android:layout_height="170dp"
+                        android:layout_above="@+id/txt_scan_gallery"
+
+                        android:layout_below="@+id/txt_scan"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/margin_5" />
+
+                    <TextView
+                        android:id="@+id/txt_scan_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10dp"
+
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_scan"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rescan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="ReScan"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:text="@string/qrcode_issue"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/font_16" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/qrcodeNumberET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/black"
+                        android:hint="@string/qrcodeET_hint"
+                        android:textSize="@dimen/font_16" />
+
+                    <Button
+                        android:id="@+id/okBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_weight="0.2"
+                        android:background="@color/text_color_main"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5"
+                        android:text="@string/OK"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratingLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/selectedExhibitorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="Selected : "
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/serviceNameLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="Service Name : "
+                        android:textSize="@dimen/font_16"
+
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/serviceNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text=""
+                        android:textSize="@dimen/font_16"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zoneLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="Zone : "
+                        android:textSize="@dimen/font_16"
+
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/zoneTV"
+                        android:textSize="@dimen/font_16"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ratingTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selectedExhibitorTv"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:text="Rating"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingTv"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:visibility="gone"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/commentSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBar"
+                    android:visibility="gone"
+
+                    />
+                <TextView
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Select option-"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edittext_white_bg_gray_corner"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:padding="@dimen/margin_5"
+                    android:id="@+id/serviceIssueTV"
+                    android:layout_below="@+id/ratingBar"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/commentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/edittext_white_bg_gray_corner"
+                    android:focusable="true"
+                    android:gravity="start"
+                    android:hint="Write your comment here"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:padding="@dimen/margin_8"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/font_16" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commentET"
+                    android:layout_marginTop="@dimen/margin_10">
+
+                    <Button
+
+                        android:id="@+id/submitBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:background="@color/text_color_main"
+                        android:padding="@dimen/margin_5"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_16" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

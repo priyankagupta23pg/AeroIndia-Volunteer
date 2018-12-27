@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/layy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_white_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_5">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/company" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/company_name_TV"
+                    style="@style/mediumTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_2"
+                    android:text="Company Name"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/address_name_TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_2"
+                    android:textColor="@color/text_color_main"
+                    android:textSize="@dimen/font_11"
+                    android:textStyle="bold"
+                    android:text="A19, Bostone"/>
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/margin_10"
+                    android:visibility="gone"
+
+                    android:id="@+id/button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <RelativeLayout
+                        android:id="@+id/viewProfLayout"
+                        android:background="@drawable/edittext_green_bg_curve_corner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/viewProfIV"
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_5"
+
+                            android:background="@drawable/view_profile" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/viewProfIV"
+                            style="@style/mediumEditText"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/viewprof" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:id="@+id/contactLayout"
+                        android:background="@drawable/edittext_green_bg_curve_corner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/contactIV"
+                            android:layout_width="@dimen/margin_20"
+                            android:layout_height="@dimen/margin_20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_5"
+
+                            android:background="@drawable/envelope" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/contactIV"
+                            style="@style/mediumEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact" />
+                    </RelativeLayout>
+
+
+                    <!--<RelativeLayout-->
+                    <!--android:layout_marginLeft="@dimen/margin_5"-->
+                    <!--android:background="@drawable/edittext_green_bg_curve_corner"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/locLayout"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                    <!--android:id="@+id/stallLocIV"-->
+                    <!--android:layout_marginLeft="@dimen/margin_5"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/marker"-->
+                    <!--android:layout_width="@dimen/margin_20"-->
+                    <!--android:layout_height="@dimen/margin_20"-->
+                    <!--/>-->
+                    <!--<TextView-->
+                    <!--android:layout_marginLeft="@dimen/margin_5"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_toRightOf="@+id/stallLocIV"-->
+                    <!--style="@style/mediumEditText"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/stall_loc" />-->
+                    <!--</RelativeLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

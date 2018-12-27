@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:background="#CAD2DF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aeroindia.view.activity.Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header"></include>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+
+        android:layout_marginLeft="@dimen/margin_70"
+        android:layout_marginRight="@dimen/margin_70"
+        android:layout_marginTop="@dimen/margin_70"
+        android:layout_marginBottom="@dimen/margin_70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/margin_25"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:padding="@dimen/margin_30"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/enrollLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/margin_70"
+                            android:layout_height="@dimen/margin_70"
+                            android:background="@drawable/enrollment" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/largeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="Manage Enrollment" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+
+                        android:layout_centerInParent="true"
+                        android:id="@+id/currentPatient"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/margin_70"
+                            android:layout_height="@dimen/margin_70"
+                            android:background="@drawable/current_patient" />
+
+                        <TextView
+                            style="@style/largeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/current_patients" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:id="@+id/rntcpTreatmentLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_15">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/margin_70"
+                        android:layout_height="@dimen/margin_70"
+                        android:background="@drawable/card" />
+
+                    <TextView
+                        style="@style/largeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="@string/rntcp_treatment_card" />
+                </LinearLayout>
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/pmdtTreatmentLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/imageView2"
+                            android:layout_width="@dimen/margin_70"
+                            android:layout_height="@dimen/margin_70"
+                            android:background="@drawable/card" />
+
+                        <TextView
+                            style="@style/largeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/pmdt_treatment_card" />
+                    </LinearLayout>
+                    </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:id="@+id/reportLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_15">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="@dimen/margin_70"
+                        android:layout_height="@dimen/margin_70"
+                        android:background="@drawable/report" />
+
+                    <TextView
+                        style="@style/largeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="@string/report" />
+                </LinearLayout>
+                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/syncLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/syncIV"
+                            android:layout_width="@dimen/margin_70"
+                            android:layout_height="@dimen/margin_70"
+                            android:background="@drawable/sync" />
+
+                        <TextView
+                            style="@style/largeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/sync" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_10"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/trainningLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_15">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/margin_70"
+                            android:layout_height="@dimen/margin_70"
+                            android:background="@drawable/medical_trainnig" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/largeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="@string/trainning_material" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

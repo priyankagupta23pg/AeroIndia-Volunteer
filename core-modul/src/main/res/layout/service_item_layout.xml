@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="cards main container">
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_20"
+            android:layout_height="80dp">
+            <ImageView android:id="@+id/icon"
+                android:layout_height="@dimen/margin_30dp"
+                android:layout_width="@dimen/margin_30dp"
+
+                android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/serviceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:textColor="@color/themecolor"
+android:layout_toRightOf="@+id/icon"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,29 @@
+{
+	"eventList": [{
+			"day": "Day 1",
+			"url": "http://test.globalitpoint.com/site/images/inogration.png",
+			"desc": "INAUGURATION – LIVE DEMONSTRATION VISIT OF HON'BLE RAKSHA MANTRI TO INSIDE THE VENUE HON'BLE RAKSHA MANTRI PRESS CONFERENCE LIVE DEMONSTRATION/ FLYING DISPLAY"
+		},
+		{
+			"day": "Day 2",
+			"url": "http://test.globalitpoint.com/site/images/buss1.jpg",
+			"desc": "TRADE & BUSINESS VISITORS LIVE DEMONSTRATION/ FLYING DISPLAY"
+		},
+		{
+			"day": "Day 3",
+			"url": "http://test.globalitpoint.com/site/images/tradevotor.jpg",
+			"desc": "TRADE & BUSINESS VISITORS LIVE DEMONSTRATION/ FLYING DISPLAY"
+		},
+		{
+			"day": "Day 4",
+			"url": "http://test.globalitpoint.com/site/images/tradbusiness.png",
+			"desc": "GENERAL VISITOR ENTRY LIVE DEMONSTRATION/ FLYING DISPLAY"
+		},
+		{
+			"day": "Day 5",
+			"url": "http://test.globalitpoint.com/site/images/public.jpg",
+			"desc": "GENERAL VISITOR ENTRY LIVE DEMONSTRATION/ FLYING DISPLAY"
+		}
+
+	]
+}

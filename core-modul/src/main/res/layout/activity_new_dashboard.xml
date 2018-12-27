@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+
+    tools:context="com.aeroindia.view.activity.NewDashboardActivity">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_50"-->
+        <!--android:background="#000080"-->
+        <!--android:id="@+id/head1">-->
+
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/margin_30"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:id="@+id/emblem"-->
+                <!--android:layout_marginLeft="@dimen/margin_5"-->
+                <!--android:layout_marginRight="@dimen/margin_10"-->
+                <!--android:background="@drawable/emblemindia" />-->
+
+            <!--<View-->
+                <!--android:id="@+id/vertical"-->
+                <!--android:layout_width="@dimen/margin_1"-->
+                <!--android:layout_height="@dimen/margin_30"-->
+                <!--android:layout_toRightOf="@+id/emblem"-->
+
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@color/white" />-->
+        <!--<TextView android:id="@+id/label"-->
+            <!--android:layout_width="@dimen/margin_100"-->
+            <!--android:layout_height="@dimen/margin_50"-->
+            <!--android:text="Ministry \n of Defence"-->
+            <!--android:textColor="@color/white"-->
+<!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/margin_5"-->
+            <!--android:textSize="@dimen/margin_10"-->
+            <!--android:layout_toRightOf="@+id/vertical"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/headerTV"-->
+            <!--style="@style/largeTextView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="AERO INDIA"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="@color/white" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/plane"-->
+            <!--android:layout_width="@dimen/margin_30dp"-->
+            <!--android:layout_height="@dimen/margin_30dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/margin_20"-->
+            <!--android:src="@drawable/planelogo"-->
+             <!--/>-->
+    <!--</RelativeLayout>-->
+<RelativeLayout android:id="@+id/logoLay"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/white"
+>
+    <ImageView
+    android:id="@+id/head"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+      android:scaleType="center"
+    android:src="@drawable/bannerimg"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logoLay"
+
+       >
+<RelativeLayout android:id="@+id/layy"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/margin_30dp"
+    android:layout_marginRight="@dimen/margin_30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/lay2"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/rounded_shape_orng_border"
+            android:padding="@dimen/margin_8dp">
+
+            <TextView
+                android:id="@+id/bUSer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=" Login "
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/margin_20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/lay3"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/rounded_shape_green_border"
+            android:padding="@dimen/margin_8dp">
+
+            <TextView
+                android:id="@+id/registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=" Sign Up "
+                android:textColor="@color/white"
+
+                android:textSize="@dimen/margin_20dp" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/lay4"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/rounded_shape_yello_button"
+        android:padding="@dimen/margin_8dp">
+
+        <TextView android:id="@+id/skipLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:layout_centerVertical="true"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_16"/>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

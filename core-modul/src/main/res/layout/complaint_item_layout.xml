@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="cards main container">
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:padding="@dimen/margin_5"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/serviceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toilet"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:textColor="@color/themecolor"
+                />
+
+            <TextView android:id="@+id/servicedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                />
+            <TextView android:id="@+id/statusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATUS SPACE"
+                android:textStyle="bold"
+                android:layout_below="@+id/servicedate"
+                android:layout_alignParentRight="true"
+                />
+            <LinearLayout android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_below="@+id/serviceTv"
+                />
+            <TextView android:id="@+id/attendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="Attend"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_10"
+
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:layout_below="@+id/linear"/>
+
+            <TextView android:id="@+id/resolveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="Resolve"
+                android:layout_marginTop="@dimen/margin_10"
+
+                android:visibility="gone"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:layout_below="@+id/linear"/>
+            <TextView android:id="@+id/notAttendedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text="Not Attended"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_10"
+
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_below="@+id/linear"
+                android:layout_toRightOf="@+id/resolveBtn"/>
+            <TextView android:id="@+id/resolvedbyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resolved by -"
+                android:visibility="gone"
+                android:layout_below="@+id/notAttendedBtn"
+                />
+            <TextView android:id="@+id/resolvedbyVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wahid Ali"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:textColor="@color/blue"
+                android:layout_toRightOf="@+id/resolvedbyTv"
+                android:layout_below="@+id/notAttendedBtn"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+
+

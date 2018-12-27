@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView android:id="@+id/writeFor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write For"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_70"
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:visibility="gone"
+                android:layout_below="@+id/writeFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+
+            <RelativeLayout android:id="@+id/lay"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/spinner"
+                android:padding="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/selectedExhibitorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected : "
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin_10"
+
+                    android:layout_marginLeft="@dimen/margin_10"
+                    />
+                <TextView android:id="@+id/ratingTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:layout_below="@+id/selectedExhibitorTv"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    />
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingTv"
+                    android:layout_marginTop="@dimen/margin_10"
+
+                    />
+                <EditText
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/commentET"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:padding="@dimen/margin_8"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textSize="@dimen/font_16"
+                    android:imeOptions="actionDone"
+                    android:gravity="start"
+                    android:textColor="@color/darker_gray"
+                    android:focusable="true"
+                    android:hint="Write your comment here"
+                    android:background="@drawable/edittext_white_bg_gray_corner"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commentET"
+                    android:layout_marginTop="@dimen/margin_10"
+                    >
+
+                    <Button
+
+                        android:id="@+id/submitBTN"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/white"
+                        android:text="Submit"
+                        android:background="@color/text_color_main"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

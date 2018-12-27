@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#fff"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10dp">
+                    <LinearLayout
+                        android:id="@+id/textLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="Your Service was awesome."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_16"
+                            android:id="@+id/titleTv"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Feedback by:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/margin_5"
+                                android:textSize="@dimen/font_14"
+                                />
+                            <TextView
+                                android:text="XYZ"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="@dimen/margin_5"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font_14"
+                                android:id="@+id/feedbackbyTxt"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Date Time :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/margin_5"
+                                android:textSize="@dimen/font_14"
+                                />
+                            <TextView
+                                android:text="10 Feb 2018 5:00 PM"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="@dimen/margin_5"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font_14"
+                                android:id="@+id/dateTimeTxt"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_below="@+id/textLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight=".5"
+                            android:layout_height="wrap_content"
+                            />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1.5">
+                            <ImageView
+                                android:id="@+id/img_star_1"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_30dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_star" />
+
+                            <ImageView
+                                android:id="@+id/img_star_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:background="@drawable/blue_star" />
+
+                            <ImageView
+                                android:id="@+id/img_star_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:background="@drawable/blue_star" />
+
+                            <ImageView
+                                android:id="@+id/img_star_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:background="@drawable/blue_star" />
+
+                            <ImageView
+                                android:id="@+id/img_star_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_10dp"
+                                android:background="@drawable/blue_star" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+

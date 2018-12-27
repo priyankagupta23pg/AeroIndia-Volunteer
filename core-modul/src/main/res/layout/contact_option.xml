@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_blue">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_130"
+        android:layout_marginBottom="@dimen/margin_82"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:background="@color/primary_blue_dark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_60">
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:textSize="@dimen/font_16"
+                android:text="Contact Via"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/cancelIV"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/margin_40"
+                android:layout_height="@dimen/margin_40"
+                android:background="@drawable/close_icon"/>
+        </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:id="@+id/emailBT"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:text="Email" />
+       </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

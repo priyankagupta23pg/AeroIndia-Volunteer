@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView android:id="@+id/serviceNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textStyle="bold"
+                android:textColor="@color/themecolor"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/margin_10"
+                />
+            <TextView android:id="@+id/claimListTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claim List"
+                android:textStyle="bold|italic"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                />
+            <LinearLayout android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/lnr_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginBottom="@dimen/margin_30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="Scan QR Code"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/margin_10"
+                        />
+
+
+                    <FrameLayout
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:id="@+id/content_frame"
+                        android:layout_width="300dp"
+                        android:layout_centerInParent="true"
+
+                        android:layout_height="170dp"
+                        android:layout_above="@+id/txt_scan_gallery"
+                        android:layout_below="@+id/txt_scan" />
+
+                    <TextView
+                        android:id="@+id/txt_scan_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_10dp"
+
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_scan"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView android:id="@+id/rescan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ReScan"
+                    android:visibility="gone"
+                    android:padding="@dimen/margin_10dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ratingLL"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/statusTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="P"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/commentTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="comment"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Name : "
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/serviceNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_below="@+id/selectedExhibitorTv"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QR Code  : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/qrcodeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_10">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zone : "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                    <TextView android:id="@+id/zoneTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/margin_10"
+                        />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/commentET"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_100"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:padding="@dimen/margin_8"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textSize="@dimen/font_16"
+                    android:imeOptions="actionDone"
+                    android:gravity="start"
+                    android:textColor="@color/darker_gray"
+                    android:focusable="true"
+                    android:hint="Place your remarks here"
+                    android:background="@drawable/edittext_white_bg_gray_corner"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commentET"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_10"
+                    >
+
+                    <Button
+
+                        android:id="@+id/resolve"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/white"
+                        android:text="@string/submit"
+                        android:background="@color/text_color_main"
+                        />
+
+                    <Button
+
+                        android:id="@+id/notattend"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="@dimen/font_16"
+                        android:textColor="@color/white"
+                        android:text="@string/submit"
+                        android:background="@color/text_color_main"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

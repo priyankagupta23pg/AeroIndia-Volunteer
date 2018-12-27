@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="otp_background" >#55BBEB</color>
+    <color name="semi_transparent_fade" >#22F44336</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#212125</color>
+    <color name="primary_text_grey">#9a9a9a</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="primary_text_color" >#222222</color>
+    <color name="primary_hint_color" >#EEEEEE</color>
+    <color name="primary">#e3e4e4</color>
+    <color name="primary_dark" >#c3000a</color>
+    <color name="primary_dark_header" >#7c0309</color>
+    <color name="accent" >#d9020d</color>
+    <color name="transparent_accent" >#22E60000</color>
+    <color name="parcial_transparent" >#40000000</color>
+    <color name="splashscreen">#e3e4e4</color>
+    <color name="colorGreen">#4ef230</color>
+    <color name="colorDarkGray">#5a5a5a</color>
+    <color name="colorOrange">#f26930</color>
+    <color name="colorLightBlue">#30aef2</color>
+    <color name="text_color_main">#031255</color>
+    <color name="navigation_bg">#e4e4e6</color>
+    <color name="navigation_divider">#bcbcbc</color><!--#323232--> <!--4c4c4c-->
+    <color name="navigation_text">#4c616c</color>
+    <color name="navigation_text_gray">#737071</color>
+    <color name="navigation_icon">#898e9b</color>
+    <color name="navigation_header_blue">#0194E1</color>
+    <color name="colorChipBackground">#e0e0e0</color>
+    <color name="colorChipBackgroundClicked">#424242</color>
+    <color name="colorChipText">#424242</color>
+    <color name="colorChipTextClicked">#F5F5F5</color>
+    <color name="colorChipCloseInactive">#757575</color>
+    <color name="colorChipCloseClicked">#F5F5F5</color>
+    
+    <color name="button_selected">#EF5350</color>
+    <color name="card_selectable_color" >#22F44336</color>
+    <color name="primary_color_yellow">#FBB600</color>
+    <color name="primary_color_yellow_header">#f1e062</color>
+    <color name="primary_green">#038b00</color>
+    <color name="primary_blue_dark">#009BAD</color>
+    <color name="primary_blue_light">#1aa7b7</color>
+    <color name="primary_blue_medium">#2f91de</color>
+    <color name="primary_blue">#00008B</color>
+    <color name="navy_blue">#2F5070</color>
+
+    <color name="backround_color">#CAD2DF</color>
+
+    <color name="primary_pink">#ffaab9</color>
+    <color name="primary_wheel_progress_color">#3895dc</color>
+    <color name="possitive_button">#4da54d</color>
+    
+    <color name="lighter_gray">#ddd</color>
+    <color name="darker_gray">#6c6c6c</color>
+    <color name="transparent_blue">#d45c606b</color>
+    <color name="green">#38AF5B</color>
+    <color name="colorLightGray">#eceae8</color>
+    <color name="colorMediumGray">#a3a2a1</color>
+
+    <color name="themecolor">#4da8d2</color>
+    <color name="appgraydark">#A9A9A9</color>
+   <!--  Calender Color   -->
+ <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#EAEAEA</color>
+    <color name="caldroid_middle_gray">#888</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff009BAD</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FF009BAD</color>
+    <color name="caldroid_present">#FFFFFF</color>
+    <color name="caldroid_leave">#FFFFFF</color>
+    <color name="caldroid_halfday">#FFA3E8F7</color>
+    <color name="caldroid_comp_off">#FEFEFE</color>
+
+    <color name="caldroid_333">#333</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+
+    <color name="black_shine">#141414</color>
+    <color name="blue">#2C9CE6</color>
+    <color name="hallColor">#ffff00ff</color>
+    <color name="restaurantColor">#ff2C9CE6</color>
+    <color name="chaletColor">#ff387109</color>
+    <color name="hospitalColor">#FFFF00</color>
+    <color name="gateColor">#FBB600</color>
+    <color name="allColor">#3336FF</color>
+    <color name="locColor">#A833FF</color>
+    <color name="purple">#A833FF</color>
+
+
+    
+</resources>

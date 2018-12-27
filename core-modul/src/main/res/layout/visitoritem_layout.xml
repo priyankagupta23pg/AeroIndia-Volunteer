@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:tag="cards main container">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_20"
+            android:layout_height="wrap_content">
+
+
+            <TextView android:id="@+id/visitorNmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitor Name : "
+                android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/visitorNmTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xyz"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/visitorNmLabel"/>
+
+                <TextView android:id="@+id/addLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address : "
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_below="@+id/visitorNmLabel"
+                    android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/addTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xyz............................................................................."
+                    android:textStyle="bold"
+android:layout_toLeftOf="@+id/sendReqLabel"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_below="@+id/visitorNmLabel"
+                    android:layout_toRightOf="@+id/addLabel"/>
+
+                <TextView android:id="@+id/sendReqLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Request"
+                    android:background="@drawable/white_rounded_shape_button"
+android:padding="@dimen/margin_10"
+
+                    android:textColor="@color/themecolor"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_below="@+id/visitorNmLabel"
+                    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+

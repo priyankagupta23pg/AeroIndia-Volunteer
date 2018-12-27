@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/plus_create_new"
+        android:icon="@drawable/plus"
+        app:showAsAction="always"
+        android:title="@string/events" />
+    <!--
+        <item
+            android:id="@+id/action_example"
+            android:title="@string/action_example"
+            app:showAsAction="withText|ifRoom"/> -->
+    <!-- <item
+        android:id="@+id/action_notification"
+        android:orderInCategory="100"
+        android:title="notification"
+        android:icon="@drawable/notification_icon"
+        app:showAsAction="always"/> -->
+</menu>
